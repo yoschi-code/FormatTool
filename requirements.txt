@@ -1,0 +1,10 @@
+# Dependencias Opcionales de FormatTool
+# 
+# Instalación:
+#   Windows: pip install -r requirements.txt
+#   Linux:   pip3 install -r requirements.txt
+#
+# Esta aplicación funcionará sin estas dependencias,
+# pero tendrá más características si las instala
+
+psutil>=5.4.0  # Para información avanzada del sistema (CPU, RAM, etc)

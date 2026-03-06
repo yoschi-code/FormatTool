@@ -1,0 +1,145 @@
+╔════════════════════════════════════════════════════════════════╗
+║          FORMATOOL - GUÍA RÁPIDA DE INICIO                      ║
+║     Formateo de USB y Archivos para Windows y Linux             ║
+╚════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────┐
+│ 1️⃣  EJECUCIÓN RÁPIDA                                          │
+└──────────────────────────────────────────────────────────────┘
+
+WINDOWS:
+  • Opción A: Haz doble clic en "formato_usb.bat"
+  • Opción B: Abre CMD y ejecuta: python format_tool.py
+
+LINUX:
+  • Opción A: Ejecuta: bash formato_usb.sh
+  • Opción B: Abre terminal y ejecuta: python3 format_tool.py
+
+┌──────────────────────────────────────────────────────────────┐
+│ 2️⃣  PRIMER USO - PASOS BÁSICOS                                 │
+└──────────────────────────────────────────────────────────────┘
+
+1. Inicia la aplicación (ver paso 1)
+2. Verás un menú con 6 opciones
+3. Selecciona la opción que necesitas (1-6)
+4. Sigue las instrucciones en pantalla
+5. Confirma operaciones peligrosas
+
+┌──────────────────────────────────────────────────────────────┐
+│ 3️⃣  TAREAS COMUNES                                             │
+└──────────────────────────────────────────────────────────────┘
+
+FORMATEAR UN USB:
+  1. Inicia FormatTool
+  2. Selecciona opción 2: "Formatear USB"
+  3. CUIDADO: Verifica que sea el dispositivo correcto
+  4. Confirma dos veces
+  5. Selecciona sistema de archivos (NTFS o FAT32)
+  
+  ⚠️ ADVERTENCIA: Se borrarán TODOS los datos sin posibilidad
+     de recuperación. Antes: guarda tus datos en otro lugar.
+
+LISTAR DISPOSITIVOS ANTES:
+  1. Selecciona opción 1: "Listar dispositivos USB/Unidades"
+  2. Anota la letra de unidad (Windows: D:, E:, etc)
+  3. O el nombre del dispositivo (Linux: /dev/sdb1, etc)
+
+REMOVER PROTECCIÓN DE ARCHIVO:
+  1. Selecciona opción 3: "Remover protección de archivo"
+  2. Ingresa la ruta completa del archivo
+  3. Ejemplo: C:\Users\Usuario\archivo.txt
+  4. ✓ Operación completada
+
+REMOVER PROTECCIÓN DE CARPETA:
+  1. Selecciona opción 4: "Remover protección de carpeta"
+  2. Ingresa la ruta de la carpeta
+  3. Se procesarán todos los archivos dentro
+  4. ✓ Operación completada
+
+BORRAR ARCHIVOS DE FORMA SEGURA:
+  1. Selecciona opción 5: "Borrar archivos de forma segura"
+  2. Ingresa la ruta del archivo
+  3. Confirma el borrado
+  4. Se sobrescribible los datos 3 veces
+  5. ✓ Archivo eliminado permanentemente
+
+┌──────────────────────────────────────────────────────────────┐
+│ 4️⃣  REQUISITOS IMPORTANTES                                     │
+└──────────────────────────────────────────────────────────────┘
+
+WINDOWS:
+  ✓ Python 3.7 o superior (descarga en python.org)
+  ✓ Ejecutar como ADMINISTRADOR para formatear
+  ✓ Windows 7 o superior
+
+LINUX:
+  ✓ Python 3.7 o superior
+  ✓ Usar SUDO para formatear: sudo python3 format_tool.py
+  ✓ Cualquier distribución Linux
+
+┌──────────────────────────────────────────────────────────────┐
+│ 5️⃣  SOLUCIÓN RÁPIDA DE PROBLEMAS                               │
+└──────────────────────────────────────────────────────────────┘
+
+"Python no encontrado":
+  WINDOWS: Reinstala Python desde python.org
+           Marca "Add Python to PATH"
+  LINUX:   sudo apt-get install python3  (Ubuntu/Debian)
+
+"Permiso denegado":
+  WINDOWS: Ejecuta como Administrador (click derecho)
+  LINUX:   Usa sudo: sudo python3 format_tool.py
+
+"El dispositivo está en uso":
+  WINDOWS: Cierra el Explorador de archivos
+  LINUX:   Desmonta: sudo umount /dev/sdXX
+
+"No veo mi USB":
+  WINDOWS: Usa opción 1 para listar unidades
+  LINUX:   Usa: lsblk    (en otra terminal)
+
+┌──────────────────────────────────────────────────────────────┐
+│ 6️⃣  CONSEJO DE SEGURIDAD                                       │
+└──────────────────────────────────────────────────────────────┘
+
+⚠️  SIEMPRE verifica:
+    1. Que sea el dispositivo CORRECTO
+    2. Que hayas guardado los datos importantes
+    3. Lee DOS VECES las confirmaciones
+
+🔒 Datos importantes:
+    • Haz BACKUP antes de formatear
+    • Los datos borrados NO se pueden recuperar
+    • Piensa tres veces antes de confirmar
+
+✓  Buenas prácticas:
+    • Practica primero con USB de prueba
+    • Desconecta otros dispositivos USB
+    • No interrumpas el formateo
+
+┌──────────────────────────────────────────────────────────────┐
+│ 7️⃣  PARA MÁS INFORMACIÓN                                       │
+└──────────────────────────────────────────────────────────────┘
+
+Lee estos archivos:
+  📄 README.md         - Documentación completa
+  📄 INSTALL.md        - Guía de instalación avanzada
+  📄 format_tool.py    - Código fuente comentado
+
+┌──────────────────────────────────────────────────────────────┐
+│ 8️⃣  ATAJOS DE TECLADO                                          │
+└──────────────────────────────────────────────────────────────┘
+
+Ctrl + C        - Cancelar operación (en cualquier momento)
+Enter           - Continuar después de una operación
+
+
+╔════════════════════════════════════════════════════════════════╗
+║                    ¡LISTO PARA EMPEZAR!                        ║
+║                                                                 ║
+║  Ejecuta format_tool.py o haz doble clic en formato_usb.bat    ║
+║                   en Windows                                    ║
+║                                                                 ║
+║  Ejecuta bash formato_usb.sh o python3 format_tool.py          ║
+║                   en Linux                                      ║
+╚════════════════════════════════════════════════════════════════╝
